@@ -18,7 +18,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.6.0'
   gem 'factory_bot_rails', "~> 4.10.0"
-  gem 'capybara', '~> 2.13.0'
+  gem 'capybara', '~> 2.15.2'
   gem 'selenium-webdriver'
 end
 
@@ -29,6 +29,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'spring-commands-rspec'
   gem 'faker', require: false # for sample data in development
+end
+
+group :test do
+  gem 'capybara', '~> 2.15.2'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
