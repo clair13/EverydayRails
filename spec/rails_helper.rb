@@ -55,7 +55,7 @@ RSpec.configure do |config|
 
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include RequestSpecHelper, type: :request
-  config.include Devise::Test::IntergrationHelpers, type: :feature
+  config.include Devise::Test::IntegrationHelpers, type: :feature
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
